@@ -9,6 +9,6 @@ export const styles_global = StyleSheet.create({
   description: {
     fontSize: 16,
     fontWeight: "400",
-    color: colors.text_gray,
+    color: colors.text.text_gray,
   },
 });

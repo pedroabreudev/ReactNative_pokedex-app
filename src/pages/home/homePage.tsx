@@ -10,7 +10,7 @@ export function HomePage() {
       <Header />
       <View>
         <Text style={styles_global.title}>Pokédex</Text>
-        <Text>
+        <Text style={styles_global.description}>
           Search for Pokémon by name or using the National Pokédex number.
         </Text>
       </View>
