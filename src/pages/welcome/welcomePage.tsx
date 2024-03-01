@@ -3,6 +3,7 @@ import { View, StyleSheet, SafeAreaView, Text } from "react-native";
 import colors from "../../styles/colors";
 import LottieView from "lottie-react-native";
 import pokemonAnimation from "./pokemon.json";
+import { Button } from "../../components/button/button";
 
 export function WelcomePage() {
   return (
@@ -19,7 +20,9 @@ export function WelcomePage() {
           Encontre todos os pokémons em um só lugar
         </Text>
       </View>
-      <View style={styles.footer}></View>
+      <View style={styles.footer}>
+        <Button title={"Iniciar"} />
+      </View>
     </View>
   );
 }
@@ -39,6 +42,9 @@ const styles = StyleSheet.create({
     backgroundColor: colors.backgound.background_white,
     borderTopRightRadius: 20,
     borderTopLeftRadius: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 20,
   },
   lottie: {
     width: 200,
